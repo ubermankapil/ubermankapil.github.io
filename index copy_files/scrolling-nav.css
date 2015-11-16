@@ -45,19 +45,10 @@ of those sections to manage the look and feel of the site. */
     background-size: 100% 100%;
     color: #fff;
 }
-
-.blog-section {
-    height: auto;
-    padding-top: 3%;
-    padding-bottom: 5%;
-    text-align: center;
-    background: #ddd;
-}
-
 .projects-section {
     height: auto;
-    padding-top: 30%;
-    padding-bottom: 45%;
+    padding-top: 0%;
+    padding-bottom: 0%;
     text-align: center;
     background: #eee;
 }
