@@ -41,7 +41,7 @@ of those sections to manage the look and feel of the site. */
     padding-bottom: 5%;
     text-align: center;
     /*background: #fff;*/
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/14/Mumbai_Skyline_at_Night.jpg);
+    background-image: url(http://www.wallhd4.com/wp-content/uploads/2015/03/new-york-city-skyline-2.jpeg);
     background-size: 100% 100%;
     color: #fff;
 }
@@ -50,6 +50,8 @@ of those sections to manage the look and feel of the site. */
     padding-top: 0%;
     padding-bottom: 0%;
     text-align: center;
+    text-decoration: none;
+    color: #000000;
     background: #eee;
 }
 
@@ -79,6 +81,14 @@ of those sections to manage the look and feel of the site. */
     background: #111;
     color: #fff;
 }
+#matrix {
+    height: auto;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right:  5%;
+    padding-top: 10%;
+    background: #000000;
+}
 
 a .fa {
 color: #555;
@@ -86,6 +96,11 @@ margin-left: 10px;
 margin-right: 10px;
 }
 
+#mini-footer {
+    padding-right: 30px;
+    color: #ffffff;
+
+}
 .row-top-bottom-margin {
     margin-top: 15px;
     margin-bottom: 15px;
