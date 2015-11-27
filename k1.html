@@ -16,9 +16,15 @@
 
     <!-- Custom CSS -->
     <link href="./index copy_files/scrolling-nav.css" rel="stylesheet">
+    <link rel="stylesheet"
+              type="text/css"
+              href="styles.css"
+              />    
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
     <!-- Font Awesome icons -->
     <link rel="stylesheet" href="./index copy_files/font-awesome.min.css">
+    <audio src="img/hey_ya.mp3" autoplay></audio>
 
 
     
@@ -33,7 +39,7 @@
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onload="do_something()">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -75,6 +81,88 @@
 .matrix { font-family:Lucida Console, Courier, Monotype; font-size:10pt; text-align:center; width:10px; padding:0px; margin:0px;}
 </style>
 <script type="text/javascript" language="JavaScript">
+
+
+/*function check_user_iq(){
+    var answer;
+    answer = prompt("What is the next term in the following series?
+        2, 12, 36, 80, __ ");
+     return answer;
+}
+function answer(){
+    if (answer() != 150)
+        alert("Sory!I think, You are not eligible to see my webpage");
+   }*/
+
+var paused = false;
+
+        // when you click on a thumbnail
+        // it sets the src of the big image
+        // to be the same as the image
+        // you clicked on
+        $(".crop-img").click(function(){
+            $("#bigImage").attr('src', 
+                $(this).attr('src'));
+        });
+
+        // the counter variable that keeps
+        // track of which image you are showing
+        var counter = 1;
+        // virtually click on the current
+        // image to load it into the big image
+        $("#image"+counter).click();
+
+        // when you click on the backwards
+        // button select the previous image
+        $("#backward").click(function (){
+            // go back one in the counter
+            counter = counter - 1;
+            // if we are below 1 (the first
+            // image) loop round to 4 (the
+            // last image)
+            if(counter < 1){
+                counter = 4;
+            }
+            // virtually click on the current
+            // image to load it into the big image
+            $("#image"+counter).click();
+        });
+
+        // when you click on the backwards
+        // button select the next image
+        $("#forward").click(function (){
+            // go forward one in the counter
+            counter = counter + 1;
+            // if we are above 4 (the last
+            // image) loop round to 1 (the
+            // first image)
+            if(counter > 4){
+                counter = 1;
+            }
+            // virtually click on the current
+            // image to load it into the big image
+            $("#image"+counter).click();
+        });
+
+        // when you click the big image 
+        // toggle pausing. Set paused to 
+        // not paused, i.e. if it is paused
+        // set it to not paused, if it is 
+        // not paused set it to paused
+        $("#bigImage").click(function (){
+            paused = !paused;
+        });
+
+        // set interval makes it move 
+        // forward every 3 second
+        setInterval(function (){
+            // first check if it is paused
+            if(!paused){
+                // virtual click the forward
+                // button
+                $("#forward").click();
+            };
+        }, 3000);
 <!--
 var rows=11; // must be an odd number
 var speed=5; // lower is faster
@@ -244,6 +332,7 @@ setTimeout("zoomer("+ycol+")", speed);
                     <br>
                     <br>
                     <img class="img-circle" src="./index copy_files/self-pic.jpeg" height="271px" style="width: 280px;">
+                     <p class="p-section-font">Hi, I am Kapil. I like learning, creating and building various things, traveling and I am interested in startups, machine learning, software, web and android development among other things. Living my last few months at Bits Pilani.</p>
                 </div>
                 <div class="col-sm-2"></div>
             </div>
@@ -267,10 +356,10 @@ setTimeout("zoomer("+ycol+")", speed);
                     </p>
                 </div>
                 <div class="col-sm-6 project-col-padding">
-                    <a href="" target="_blank"><img class="img-circle" src="./index copy_files/stock.jpg" height="200" width="200">
+                    <a href="file:///Users/kapil/Desktop/ubermankapil/index.html" target="_blank"><img class="img-circle" src="./index copy_files/stock.jpg" height="200" width="200">
                     </a>
                     <p class="p-section-font">
-                    Created an Stock Market Analyzer android app which aims to help Investors and Share-Brokers in taking the decision between any 2 Companies while Purchasing, Selling or Retaining shares.</p>
+                    Currently creating an Stock Market Analyzer android app which aims to help Investors and Share-Brokers in taking the decision between any 2 Companies while Purchasing, Selling or Retaining shares.</p>
                 </div>
                 <div class="col-sm-6 project-col-padding">
                     <a href="https://github.com/ubermankapil" target="_blank"><img class="img-circle" src="./index copy_files/scratch.jpg" height="200" width="200">
@@ -279,7 +368,7 @@ setTimeout("zoomer("+ycol+")", speed);
                     Created a game "XYZ" in Scratch Language using <a href="https://scratch.mit.edu/"></a>which can be played by maximum 10 players at a time.</p>
                 </div>
                 <div class="col-sm-6 project-col-padding">
-                    <a href="file:///Users/kapil/Desktop/ubermankapil.github.io/eri.html" target="_blank"><img class="img-circle" src="./index copy_files/eri.png" height="200" width="200"></a>
+                    <a href="http://get.mentored-research.com/mycert/ERI15-ME-10780.pdf" target="_blank"><img class="img-circle" src="./index copy_files/eri.png" height="200" width="200"></a>
                     <p class="p-section-font">
                     Analyzed Tata Motors Ltd. for 2 months by performing  Fundamental, Technical and Ratio Analysis and have constructed valuation models for the company and also prepared a stock pitch video for the company as a part of Mentored-Research Equity Research Initiative program.
                     </p>
