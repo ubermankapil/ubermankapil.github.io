@@ -41,7 +41,7 @@ of those sections to manage the look and feel of the site. */
     padding-bottom: 5%;
     text-align: center;
     /*background: #fff;*/
-    background-image: url(http://www.wallhd4.com/wp-content/uploads/2015/03/new-york-city-skyline-2.jpeg);
+    background-image: url("night-min.jpg");
     background-size: 100% 100%;
     color: #fff;
 }
@@ -82,11 +82,11 @@ of those sections to manage the look and feel of the site. */
     color: #fff;
 }
 #matrix {
-    height: auto;
+    height: 655px;
     padding-bottom: 5%;
     padding-left: 5%;
     padding-right:  5%;
-    padding-top: 10%;
+    padding-top: 20%;
     background: #000000;
 }
 
