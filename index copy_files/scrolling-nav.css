@@ -36,7 +36,7 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
-    height: auto;
+    height: 700px;
     padding-top: 10%;
     padding-bottom: 5%;
     text-align: center;
@@ -82,7 +82,7 @@ of those sections to manage the look and feel of the site. */
     color: #fff;
 }
 #matrix {
-    height: 655px;
+    height: 700px;
     padding-bottom: 5%;
     padding-left: 5%;
     padding-right:  5%;
