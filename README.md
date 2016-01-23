@@ -1,1 +1,0 @@
-# ubermankapil.github.io
