@@ -4,10 +4,8 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-73316498-1', 'auto');
   ga('send', 'pageview');
-
 </script>
 	<head>
 		<title>Image Gallery</title>
@@ -95,62 +93,6 @@
 				<img id="image5" class="crop-img" src="img/photo12-min.jpg" alt="Uthapizza"/> 
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-3">
-				<img id="image21" class="crop-img" src="img/21-min.jpg" alt="Uthapizza"/> 
-			</div>
-			<div class="col-md-3">
-				<img id="image22" class="crop-img" src="img/28-min.jpg" alt="Uthapizza"/> 
-			</div>
-			<div class="col-md-3">
-				<img id="image23" class="crop-img" src="img/29-min.jpg" alt="Uthapizza"/> 
-			</div>
-			<div class="col-md-3">
-				<img id="image24" class="crop-img" src="img/36-min.jpg" alt="Uthapizza"/> 
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-3">
-				<img id="image25" class="crop-img" src="img/34-min.jpg" alt="Uthapizza"/> 
-			</div>
-			<div class="col-md-3">
-				<img id="image26" class="crop-img" src="img/23-min.jpg" alt="Uthapizza"/> 
-			</div>
-			<div class="col-md-3">
-				<img id="image27" class="crop-img" src="img/25-min.jpg" alt="Uthapizza"/> 
-			</div>
-			<div class="col-md-3">
-				<img id="image28" class="crop-img" src="img/32-min.jpg" alt="Uthapizza"/> 
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-3">
-				<img id="image29" class="crop-img" src="img/33-min.jpg" alt="Uthapizza"/> 
-			</div>
-			<div class="col-md-3">
-				<img id="image30" class="crop-img" src="img/35-min.jpg" alt="Uthapizza"/> 
-			</div>
-			<div class="col-md-3">
-				<img id="image31" class="crop-img" src="img/27-min.jpg" alt="Uthapizza"/> 
-			</div>
-			<div class="col-md-3">
-				<img id="image32" class="crop-img" src="img/31-min.jpg" alt="Uthapizza"/> 
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-3">
-				<img id="image33" class="crop-img" src="img/30-min.jpg" alt="Uthapizza"/> 
-			</div>
-			<div class="col-md-3">
-				<img id="image34" class="crop-img" src="img/26-min.jpg" alt="Uthapizza"/> 
-			</div>
-			<div class="col-md-3">
-				<img id="image35" class="crop-img" src="img/22-min.jpg" alt="Uthapizza"/> 
-			</div>
-			<div class="col-md-3">
-				<img id="image36" class="crop-img" src="img/24-min.jpg" alt="Uthapizza"/> 
-			</div>
-		</div>
 	</div>
 
 		<!--
@@ -176,7 +118,6 @@
 	<script>
 		// whether the slideshow is paused or not
 		var paused = false;
-
 		// when you click on a thumbnail
 		// it sets the src of the big image
 		// to be the same as the image
@@ -185,14 +126,12 @@
 			$("#bigImage").attr('src', 
 				$(this).attr('src'));
 		});
-
 		// the counter variable that keeps
 		// track of which image you are showing
 		var counter = 1;
 		// virtually click on the current
 		// image to load it into the big image
 		$("#image"+counter).click();
-
 		// when you click on the backwards
 		// button select the previous image
 		$("#backward").click(function (){
@@ -202,14 +141,12 @@
 			// image) loop round to 4 (the
 			// last image)
 			if(counter < 1){
-				counter = 32;
 				counter = 16;
 			}
 			// virtually click on the current
 			// image to load it into the big image
 			$("#image"+counter).click();
 		});
-
 		// when you click on the backwards
 		// button select the next image
 		$("#forward").click(function (){
@@ -218,7 +155,6 @@
 			// if we are above 4 (the last
 			// image) loop round to 1 (the
 			// first image)
-			if(counter > 32){
 			if(counter > 16){
 				counter = 1;
 			}
@@ -226,7 +162,6 @@
 			// image to load it into the big image
 			$("#image"+counter).click();
 		});
-
 		// when you click the big image 
 		// toggle pausing. Set paused to 
 		// not paused, i.e. if it is paused
@@ -235,7 +170,6 @@
 		$("#bigImage").click(function (){
 			paused = !paused;
 		});
-
 		// set interval makes it move 
 		// forward every 3 second
 		setInterval(function (){
@@ -250,10 +184,3 @@
 
 	</body>
 </html>
-
-
-
-
-
-
-
