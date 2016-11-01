@@ -115,29 +115,32 @@ body{
     border-radius:0;
 }
 .padding0{
-    padding-bottom: 0.05cm;
+    padding-bottom: 1.8cm;
 }
 .padding1{
-    padding-bottom: 1.15cm;
-    padding-bottom: 1.1cm;
+    padding-bottom: 2.86cm;
 }
 .padding2{
-    padding-bottom: 1.65cm;
+    padding-bottom: 1.95cm;
+}
+.padding12{
+    padding-bottom: 3.18cm;
+}
+.padding13{
+    padding-bottom: 0.52cm;
 }
 .padding3{
-    padding-bottom: 2.55cm;
+    padding-bottom: 2.65cm;
 }
+
 .padding4{
-    padding-bottom: 2.61cm;
-}
-.padding4{
-    padding-bottom: 1.52cm;
+    padding-bottom: 2.635cm;
 }
 .padding5{
     padding-bottom: 0.532cm;
 }
 .padding7{
-    padding-bottom: 2cm;
+    padding-bottom: 0.52cm;
 }
 .font{
     font-size:120%;
